@@ -19,6 +19,6 @@ module.exports.parse = attdata => ({
         .split('\0')
         .shift()
     ) || 0,
-  state: attdata[28],
+  state: attdata[33],
   timestamp: timeParser.decode(attdata.readUInt32LE(29))
 });
